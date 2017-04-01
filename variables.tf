@@ -1,10 +1,3 @@
-variable "access_key" {
-  description = "AWS access_key."
-}
-
-variable "secret_key" {
-  description = "AWS secret_key."
-}
 
 variable "region" {
   description = "AWS region."
@@ -20,7 +13,15 @@ variable "ami" {
   default = {}
 }
 
-variable "instance_type"  {
-  description = "AWS instance_type."
+variable "aws_instance"  {
+  description = "AWS instance type."
   default = "t2.micro"
+}
+variable "cidr" {
+  description = "AWS vpc cidr"
+  default = "10.0.0.0/16"
+}
+variable "public_subnet" {
+  description = "AWS public subnet"
+  default = "10.0.1.0/24"
 }
