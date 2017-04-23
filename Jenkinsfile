@@ -11,12 +11,7 @@ pipeline {
     }
     stage('Stage') {
       steps {
-        error 'Check code'
-      }
-    }
-    stage('Prod') {
-      steps {
-        echo 'Finish'
+        echo 'test'
       }
     }
   }
